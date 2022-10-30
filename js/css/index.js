@@ -26,6 +26,11 @@ document.querySelector(".plus").onclick = function() {
     count.textContent = value;
   });
 
-rnd.addEventListener("click",() => {rnd(-9, 9)} )
+rnd.addEventListener("click",() => {function getRandomInt(min) {
+    return Math.floor(Math.random() * min);
+  }
   
-
+  value1 = getRandomInt (10);
+  value2 = getRandomInt (-10);
+count.textContent = value1 + value2;
+} )
